@@ -1,5 +1,5 @@
 title: Jason Nydegger | Writing Samples
-url: 
+url: https://jason-nydegger.github.io/writing-portfolio/
 theme: minima
 header_pages:
 - index.md
@@ -8,7 +8,6 @@ header_pages:
 - setup-guide.md
 - user-guide.md
 - api-guide.md
-
 plugins:
   - jekyll-toc
 exclude:
