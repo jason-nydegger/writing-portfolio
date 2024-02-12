@@ -1,0 +1,24 @@
+title: Jason Nydegger | Writing Samples
+url: 
+theme: minima
+header_pages:
+- index.md
+- program-overview.md
+- product-overview.md
+- setup-guide.md
+- user-guide.md
+- api-guide.md
+
+plugins:
+  - jekyll-toc
+exclude:
+- .sass-cache/
+- .jekyll-cache/
+- gemfiles/
+- Gemfile
+- Gemfile.lock
+- node_modules/
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/

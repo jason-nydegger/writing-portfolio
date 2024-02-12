@@ -1,0 +1,22 @@
+---
+---
+
+// Import the minima theme
+@import "{{ site.theme }}";
+
+// Add your custom styles below
+// For example, change the color of headings and links
+.site-footer {display: none;}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ff6600;
+}
+
+site-title {
+  color: #ff6600;
+}
+
+
+a {
+  color: #3399ff;
+}
