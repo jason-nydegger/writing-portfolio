@@ -7,11 +7,11 @@ This site includes a collection of writing samples that showcase different types
 
 Now, let's dive in!
 
-* [Program Overview](/program-overview)
-* [Product Overview](/product-overview/) 
-* [Setup Guide](/setup-guide/)
-* [User Guide](/user-guide/)
-* [API Guide](/api-guide/) 
+* [Program Overview](https://jason-nydegger.github.io/writing-portfolio/product-overview/)
+* [Product Overview](https://jason-nydegger.github.io/writing-portfolio/product-overview/) 
+* [Setup Guide](https://jason-nydegger.github.io/writing-portfolio/setup-guide/)
+* [User Guide](https://jason-nydegger.github.io/writing-portfolio/user-guide/)
+* [API Guide](https://jason-nydegger.github.io/writing-portfolio/api-guide/) 
 
 ## About me
 
