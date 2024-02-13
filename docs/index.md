@@ -7,7 +7,7 @@ This site includes a collection of writing samples that showcase different types
 
 Now, let's dive in!
 
-* [Program Overview](/program-overview/) 
+* [Program Overview](/program-overview)
 * [Product Overview](/product-overview/) 
 * [Setup Guide](/setup-guide/)
 * [User Guide](/user-guide/)
