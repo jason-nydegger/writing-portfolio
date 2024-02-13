@@ -43,9 +43,9 @@ For example: `https://api.spooky.com/search?=EXPIRED`.
 
 ### Sorting
 
-You can sort the response objects by usring the `sort` parameter in your request. Depending on your parameter, you can sort in ascending order using `sort=<parameter>` (for example: `sort=timestamp`) or in descending order using `sort=-<parameter>` (for example: `sort=-timestamp`)
+You can sort the response objects by using the `sort` parameter in your request. Depending on your parameter, you can sort in ascending order using `sort=<parameter>` or in descending order using `sort=-<parameter>`.
 
-For example: `https://api.spooky.com/task?status=-timestamp`.
+For example: `https://api.spooky.com/task?status?sort=-timestamp`.
 
 ## Learn the basics
 Before you start using the API, you should understand the core components of the ordering workflow and other operations you can perform.
@@ -74,7 +74,6 @@ def get_sku (url, headers):
         sku_name = off.get("sku")
         sku_id = off.get("id")
         if sku_name == sku:
-            print(f"{sku_id}")
             return sku_id
         
 get_sku (url, headers)
