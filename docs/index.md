@@ -7,11 +7,11 @@ This site includes a collection of writing samples that showcase different types
 
 Now, let's dive in!
 
-* [Program Overview](writing-portfolio/program-overview/) 
-* [Product Overview](writing-portfolio/product-overview/) 
-* [Setup Guide](writing-portfolio/setup-guide/)
-* [User Guide](writing-portfolio/user-guide/)
-* [API Guide](writing-portfolio/api-guide/) 
+* [Program Overview](/program-overview/) 
+* [Product Overview](/product-overview/) 
+* [Setup Guide](/setup-guide/)
+* [User Guide](/user-guide/)
+* [API Guide](/api-guide/) 
 
 ## About me
 
