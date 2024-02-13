@@ -19,7 +19,7 @@ After setting up the infrastructure, it executes your tests and reports the resu
 
 The following is a high-level overview of how Constanza works.
 
-<img src="{{"/assets/costanza_workflow.jpg" | prepend: site.baseurl}}" alt="Overview of Constanza workflow" />
+<img src="{{"/assets/costanza_workflow.jpg"}}" alt="Overview of Constanza workflow" />
 
 ## Core Concepts
 
