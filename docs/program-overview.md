@@ -21,7 +21,7 @@ To deliver a world-class experience, we implement a **development and operations
 
 The following image is a functional overview of the Technical Documentation Program framework.
 
-<img src="{{"/assets/tech_doc_program.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="Overview of the technical documentation program" />
+<img src="{{"/assets/tech_doc_program.jpg" | prepend: site.url}}" alt="Overview of the technical documentation program" />
 
 The DevOps infrastructure is built on a set of [Standards and Requirements](link) that define the scope, operations, and best practices for the program; this includes the program charter, style guide, DevOps requirements, and technical references. 
 

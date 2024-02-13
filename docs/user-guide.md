@@ -34,7 +34,7 @@ This sample enables you to quickly verify the connection to your Slack workspace
 
 The following is the example automation sequence you will create, including the input/output data types, and the applicable Slack APIs that are being called.
 
-<img src="{{"/assets/quickstart_overview.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="Example automation sequence, its input/output data types, and the applicable Slack APIs that are being called"/>
+<img src="{{"/assets/quickstart_overview.jpg" | prepend: site.url}}" alt="Example automation sequence, its input/output data types, and the applicable Slack APIs that are being called"/>
 
 ## Prerequisites
 
@@ -70,7 +70,7 @@ Before you begin, complete the [Slack Setup](link) guide.
 
     2. Create and enter a `string` variable for the **Text** property (for example, *messageText* with default value of *"Welcome to "+channelName*).
 
-<img src="{{"/assets/quickstart_create_project.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="Example automation project using Slack activities"/>
+<img src="{{"/assets/quickstart_create_project.jpg" | prepend: site.url}}" alt="Example automation project using Slack activities"/>
 
 Your automation project is now ready. To verify that it works, let’s test your project.
 
@@ -100,7 +100,7 @@ Your automation project is now ready. To verify that it works, let’s test your
 
 3. Press **Start** and verify the results in the **Output** window.
 
-<img src="{{"/assets/quickstart_test_project.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="Example of a successfully executed automation project using Slack activities"/>
+<img src="{{"/assets/quickstart_test_project.jpg" | prepend: site.url}}" alt="Example of a successfully executed automation project using Slack activities"/>
 
 You're done!
 

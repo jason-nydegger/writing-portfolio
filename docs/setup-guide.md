@@ -24,7 +24,7 @@ To integrate your application, assign permissions, and start building your autom
 
 After registering your Microsoft Office 365 application, Azure Active Directory assigns a unique application (client) ID that you enter in the Microsoft Office 365 Scope activity along with the services that you assigned permissions to (for example, files, mail, calendar).
 
-<img src="{{"/assets/setup-steps.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="Overview of the setup steps"/>
+<img src="{{"/assets/setup-steps.jpg" | prepend: site.url}}" alt="Overview of the setup steps"/>
 
 ## Steps
 
@@ -36,7 +36,7 @@ After registering your Microsoft Office 365 application, Azure Active Directory 
 
 3. In the top navigation bar, press **+ New registration**.
 
-    <img src="{{"/assets/azure_application_registration_start.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="How to register new azure application"/>
+    <img src="{{"/assets/azure_application_registration_start.jpg" | prepend: site.url}}" alt="How to register new azure application"/>
 
 4. Enter a **Name** for your application (for example, office365).
 
@@ -46,7 +46,7 @@ After registering your Microsoft Office 365 application, Azure Active Directory 
 
 7. Press **Register**.
 
-    <img src="{{"/assets/azure_application_registration.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="Example application registration for Microsoft Office 365 activities"/>
+    <img src="{{"/assets/azure_application_registration.jpg" | prepend: site.url}}" alt="Example application registration for Microsoft Office 365 activities"/>
 
 ### Add API permissions
 
@@ -58,7 +58,7 @@ After registering your Microsoft Office 365 application, Azure Active Directory 
 
 4. Under **Commonly used Microsoft APIs**, choose **Microsoft Graph**.
 
-    <img src="{{"/assets/azure_graph_api_permissions_start.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="How to add API permissions to registered application"/>
+    <img src="{{"/assets/azure_graph_api_permissions_start.jpg" | prepend: site.url}}" alt="How to add API permissions to registered application"/>
 
 5. Under **What type of permissions does your application require?**, choose **Delegated permissions**.
 
@@ -79,11 +79,11 @@ After registering your Microsoft Office 365 application, Azure Active Directory 
 
 7. Press **Add permissions** (this returns you to your list of API permissions).
 
-    <img src="{{"/assets/azure_graph_api_permissions_assign.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="How to choose API permissions for a registered application"/>
+    <img src="{{"/assets/azure_graph_api_permissions_assign.jpg" | prepend: site.url}}" alt="How to choose API permissions for a registered application"/>
 
 8. Verify your **API permissions** include your added **Calendars**, **Files**, and **Mail** permissions.
 
-    <img src="{{"/assets/azure_graph_api_permissions_verify.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="List of chosen API permissions for a registered application"/>
+    <img src="{{"/assets/azure_graph_api_permissions_verify.jpg" | prepend: site.url}}" alt="List of chosen API permissions for a registered application"/>
 
 ### Build your project
 
@@ -97,7 +97,7 @@ After registering your Microsoft Office 365 application, Azure Active Directory 
 
     4. Press **Create**.
 
-    <img src="{{"/assets/create_automation_project_start.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="How to create a new automation project in UiPath Studio"/>
+    <img src="{{"/assets/create_automation_project_start.jpg" | prepend: site.url}}" alt="How to create a new automation project in UiPath Studio"/>
 
 2. Install the **UiPath.MicrosoftOffice365.Activities** package.
 
@@ -109,7 +109,7 @@ After registering your Microsoft Office 365 application, Azure Active Directory 
 
     4. Choose **UiPath.MicrosoftOffice365.Activities** and press **I Accept** to accept the license for the activities.
 
-    <img src="{{"/assets/create_automation_project_add_package.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="How to install the UiPath.MicrosoftOffice365.Activities package"/>
+    <img src="{{"/assets/create_automation_project_add_package.jpg" | prepend: site.url}}" alt="How to install the UiPath.MicrosoftOffice365.Activities package"/>
 
 ## Next steps
 
