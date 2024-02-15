@@ -57,7 +57,7 @@ To see the offerings available in your subscription, send a GET request to the [
 
 The following is an example Python script that returns the `id` of a specific offering `sku` that you save to use in subsequent calls.
 
-**Example request** (Python)
+**Get Offerings - Python Example**
 
 ```python
 import requests
@@ -84,31 +84,70 @@ Offering parameters are the options you specify when sending an order request fo
 
 To see the offering parameters available for each offering, send a GET request to the [offerings/SKU_ID/parameters](link) endpoint. The response will include a list of each parameter's `fieldName` and other metadata that are available based on your subscription.
 
-The following is an example Python script that returns the `fieldName` for a specified `skuId`. 
+The following is a Python script that builds upon the previous **Get Offerings – Python Example**. Using the `sku_id`, the request gets all parameters available for a given offering (e.g., Wolf) and prints a list of the relevant information that you will use when in an order request, including the `fieldName`, `datatype` and the `minValue`, `maxValue`, and `default` value if applicable.
 
-**Example request** (Python)
+**Get Offering Parameters - Python Example**
 
 ```python
 import requests
 import json
 
 headers = {"Authorization": "<YOUR_API_KEY>"}
-url = "https://api.spooky.com/offerings/<SKU_ID>/parameters"
+url = "https://api.spooky.com/offerings"
+sku = "Wolf"
 
-def get_parameters (url, headers):
+def get_sku (url, headers):
     response = requests.get(url, headers=headers)
     sku_data = json.loads(response.content.decode("utf-8"))["data"]
     for off in sku_data:
-        field_name = off.get("fieldName")
-            return fieldName
+        sku_name = off.get("sku")
+        sku_id = off.get("id")
+        if sku_name == sku:
+            return sku_id
         
-get_parameters (url, headers)
-```
+    except requests.RequestException as e:
+        print(f"Error fetching data: {e}")
+        return None
 
-To specify your parameters in an order request, you add the `offeringParamValues` object to your order request and populate it with the specific options as shown in the following example:
+def get_parameters(sku_id):
+    if sku_id is None:
+        print("Invalid SKU ID. Cannot fetch parameters.")
+        return
+
+    parameters_url = url + f"/{sku_id}/parameters"
+    try:
+        response = requests.get(parameters_url, headers=headers)
+        parameters_data = json.loads(response.content.decode("utf-8"))["data"]
+        for param in parameters_data:
+            field = param.get("fieldName")
+            dataType = param.get("dataType")
+            minValue = param.get("minValue")
+            maxValue = param.get("maxValue")
+            default = param.get("default")
+            if maxValue is not None:
+                print(f"{field} | {dataType} | Max:{maxValue} | Min: {minValue} | Default: {default}")
+            else:
+                print(f"{field} | {dataType}")
+    except requests.RequestException as e:
+        print(f"Error fetching parameters: {e}")
+
+sku_id = get_sku_and_id()
+get_parameters(sku_id)
+
+```
+**Example Output**
+
+```
+productType | string
+maxCloudPercent | integer | Max: 100 | Min: 30 | Default: None
+sunElevation | [integer] | Max:[90, 90] | Min: [-4, -4] | Default: None
+mammal_detection | boolean
+motion_detection | boolean
+building_detection | boolean
+```
+To specify the offering parameters in an order request, you add the `offeringParamValues` object to your request and populate it with the specific options as shown in the following example:
 
 ```json
-
 {
     "offeringParameters": {
         "sunElevation": [
@@ -120,14 +159,8 @@ To specify your parameters in an order request, you add the `offeringParamValues
     }
 }
 ```
-The following table shows the offering parameters. Depending on your subscription, some of the parameters are not avialable.
+The following table shows all of the offering parameters. Depending on your subscription, some of the parameters are not avialable.
 
-<style>
-  th {
-    background-color: #B4B4B4 !important;
-    color: black;
-  }
-</style>
 <table>
   <tr>
     <th>Field</th>
