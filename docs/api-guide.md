@@ -82,9 +82,9 @@ get_sku (url, headers)
 #### Offering parameters 
 Offering parameters are the options you specify when sending an order request for a new image. For example, you can specify the maximum cloud coverage, sun elevation, and analytics of your order.
 
-To see the offering parameters available for each offering, send a GET request to the [offerings/SKU_ID/parameters](link) endpoint. The response will include a list of each parameter's `fieldName` and other metadata that are available based on your subscription.
+To see the offering parameters available for an offering, send a GET request to the [offerings/SKU_ID/parameters](link) endpoint. The response will include a list of each parameter's `fieldName` and other metadata that are available based on your subscription.
 
-The following is a Python script that builds upon the previous **Get Offerings – Python Example**. Using the `sku_id`, the request gets all parameters available for a given offering (e.g., Wolf) and prints a list of the relevant information that you will use when in an order request, including the `fieldName`, `datatype` and the `minValue`, `maxValue`, and `default` value if applicable.
+The following is a Python script that builds upon the previous **Get Offerings – Python Example**. Using the `sku_id`, the request gets all parameters available for a given offering (e.g., Wolf) and prints a list of the relevant information that you will use in an order request, including the `fieldName`, `datatype` and the `minValue`, `maxValue`, and `default` value if applicable.
 
 **Get Offering Parameters - Python Example**
 
