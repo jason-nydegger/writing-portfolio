@@ -51,9 +51,9 @@ For example: `https://api.spooky.com/task?status?sort=-timestamp`.
 Before you start using the API, you should understand the core components of the ordering workflow and other operations you can perform.
 
 ### Offerings
-Offerings are the tasking tiers (Cheetah, Wolf, Sloth) that are available in your Spooky subscription. When placing an order for an image, you specify the offering that you want to use for the request. Each offering has a unique identifier (`id`) that must be specified when submitting a new order.
+Offerings are the tasking tiers (Cheetah, Wolf, Sloth) that are available in your Spooky subscription. When placing an [order](link) for an image, you specify the offering that you want to use for the request. Each offering has a unique identifier (`id`) that must be specified when submitting a new order.
 
-To see the offerings available in your subscription, send a GET request to the [order/offerings](link) endpoint. The response will include a list of the available offerings (`sku`) and associated `id` that you will save and use in a new order request.
+To see the offerings available in your subscription, send a GET request to the [offerings](link) endpoint. The response will include a list of the available offerings (`sku`) and associated `id` that you will save and use in a new order request.
 
 The following is an example Python script that returns the `id` of a specific offering `sku` that you save to use in subsequent calls.
 
