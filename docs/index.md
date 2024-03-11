@@ -21,8 +21,6 @@ I've had the opportunity to develop new programs, implement process improvements
 
 My goal for any position is to drive impact across the organization and delight customers (internal and external) through effective project management and content experiences. My ability to lead and collaborate with teams across disciplines enables me to build trust and deliver results. I bring energy and optimism to solving complex problems and love encouraging others to do the same.
 
-Does the above read a little dry? Yeah, it's my professional intro. But, that's the purpose of this site, so I am going to keep it :). I look forward to meeting if you're reading this!
-
 ## Recommendations
 To demonstrate my impact, influence, and skills, I have included the following recommendations from previous managers and colleagues that were provided via **[my Linkedin profile](https://www.linkedin.com/in/jason-nydegger/)**.
 
