@@ -5,7 +5,7 @@ permalink: /program-overview/
 ---
 *The following is a vision for a Technical Documentation Program. Its purpose is to describe the program scope and provide an overview of the documentation development infrastructure and tooling. This is intended to be landing page for an internal site (e.g., SharePoint, Wiki) for a technical documentation team and internal customers.*
 
-*Note: The links in this example are placeholders (not active) to demonstrate how a customer would learn more about a given topic*
+*Note: The links in this example are placeholders (not active) to demonstrate how a customer would learn more about a given topic*.
 
 # Introduction
 The Technical Documentation Program **manages the development of our internal and external facing technical documentation.** It implements content standards, operational processes, and development tools to create quality documentation in a consistent, efficient, trackable, and scalable manner.
