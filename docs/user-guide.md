@@ -14,7 +14,7 @@ permalink: /user-guide/
 
 *UiPath documentation did not have Quickstart guides and only a handful of examples. I took the opportunity to introduce these standards to help our customers develop faster and with more confidence. My goal for all Quickstart guides was to provide customers with not only the steps to create a sample automation project, but steps to test their work so they could verify they were successful; this also gives them an idea of how they may verify their own designs.*
 
-*Note: The links in this example are placeholders (not active), to demonstrate how a customer would learn more about a given topic*
+*Note: The links in this example are placeholders (not active), to demonstrate how a customer would learn more about a given topic*.
 
 ## Quickstart - Channels and Messages
 
