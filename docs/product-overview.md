@@ -6,7 +6,7 @@ toc: true
 ---
 *The following is an introduction page for a test automation platform. Its purpose is to provide developers a brief overview of the platform and its core concepts.*
 
-*Note: The links in this example are placeholders (not active), to demonstrate how a customer would learn more about a given topic*
+*Note: The links in this example are placeholders (not active), to demonstrate how a customer would learn more about a given topic*.
 
 ## What is Costanza?
 
